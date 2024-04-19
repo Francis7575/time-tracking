@@ -1,3 +1,4 @@
+
 type CardProps = {
     bgColor: string,
     iconSrc: string,
@@ -23,7 +24,7 @@ const Cards = ({ bgColor, iconSrc, title, hours, lastWeekHours, iconClass, }: Ca
                         <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
                                 fill="#BBC0FF"
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 className='ellipsis-svg' />
                         </svg>
                     </button>
@@ -66,17 +67,17 @@ const getCardBgColor = (index: number): string => {
 const getCardIconSrc = (index: number): string => {
     switch (index) {
         case 0:
-            return "/assets/icon-work.svg";
+            return "/time-tracking/assets/icon-work.svg";
         case 1:
-            return "/assets/icon-play.svg";
+            return "/time-tracking/assets/icon-play.svg";
         case 2:
-            return "/assets/icon-study.svg";
+            return "/time-tracking/assets/icon-study.svg";
         case 3:
-            return "/assets/icon-exercise.svg";
+            return "/time-tracking/assets/icon-exercise.svg";
         case 4:
-            return "/assets/icon-social.svg";
+            return "/time-tracking/assets/icon-social.svg";
         case 5:
-            return "/assets/icon-self-care.svg"
+            return "/time-tracking/assets/icon-self-care.svg"
         default:
             return "";
     }
