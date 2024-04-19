@@ -14,4 +14,5 @@ export type DataItem = {
 
 export type ButtonsProps = {
     onClick: (timeframe: keyof DataItem['timeframes']) => void;
+    selectedTimeframe: keyof DataItem['timeframes'];
 }
